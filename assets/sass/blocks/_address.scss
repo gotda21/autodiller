@@ -1,5 +1,9 @@
 .address {
     margin-bottom: 10rem;
+
+    @include bp($point_2) {
+        margin-bottom: 25rem;
+    }
 }
 
 .address_map {
@@ -29,11 +33,21 @@
     @include bp($point_2) {
         display: flex;
         flex-direction: column;
+        padding: 1.5rem;
+        gap: 2rem;
+        align-items: start;
+        bottom: -20rem;
     }
 }
 
 .address_address {
     max-width: 32.5rem;
+
+    @include bp($point_2) {
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
 }
 
 .address_address_title {
@@ -45,6 +59,9 @@
 .address_address_subtitle {
     font-weight: 500;
     font-size: 20px;
+    @include bp($point_2) {
+        font-size: 16px;
+    }
 }
 
 .address_phone {
@@ -72,6 +89,10 @@
 .address_phone_number {
     font-weight: 500;
     font-size: 20px;
+
+    @include bp($point_2) {
+        font-size: 16px;
+    }
 }
 
 .address_phone_image {
@@ -92,4 +113,14 @@
 .address_worktime_subtitle {
     font-weight: 500;
     font-size: 20px;
+
+    @include bp($point_2) {
+        font-size: 16px;
+    }
+}
+
+.address_button {
+    @include bp($point_2) {
+        width: 100%;
+    }
 }
