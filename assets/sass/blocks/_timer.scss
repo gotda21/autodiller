@@ -1,0 +1,56 @@
+.timer_main {
+    margin: 23px 0px 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252c2c;
+    padding: 4rem 3.2rem;
+    border-radius: 10px;
+
+    @include bp($point_2) {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+}
+
+.timer_srok {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 110%;
+    text-transform: uppercase;
+    max-width: 34rem;
+
+    @include bp($point_2) {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+}
+
+.timer_time__list {
+    list-style: none;
+    display: flex;
+    gap: 9rem;
+
+    @include bp($point_2) {
+        gap: 6rem;
+    }
+}
+
+.timer_time__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.timer_time__item h3 {
+    font-weight: 700;
+    font-size: 3.4rem;
+}
+
+.timer_time__item p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 110%;
+}

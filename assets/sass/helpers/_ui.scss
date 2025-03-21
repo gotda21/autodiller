@@ -1,0 +1,41 @@
+.btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: contain;
+	border-radius: 1rem;
+	width: 100%;
+	border: .1rem solid $orange;
+	button  {
+		padding: 1.8rem 3rem;
+		@include app;
+		width: 100%;
+		@include flex-center;
+		gap: 1rem;
+		height: 100%;
+		@include bp($point_2) {
+			font-size: 1.4rem;
+		}
+	}
+
+	.btn_icon {
+		width: 1.5rem;
+        height: 1.5rem;
+		color: $dark;
+	}
+    &.primary{
+        background-color: $orange;
+    }
+
+	&.secondary button{
+        background-color: transparent;
+		color: $white;
+	}
+}
+
+hr {
+	width: 100%;
+	border: none;
+	background-color: $grey; /* Цвет линии для браузера Firefox и Opera */
+    height: .1rem; /* Толщина линии */
+}

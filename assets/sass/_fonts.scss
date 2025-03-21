@@ -1,0 +1,5 @@
+// Fonts include //
+
+@include font_face("TT-TANK-Bold", "TT-TANK-Bold", $font_path, 700);
+@include font_face("TT-TANK-Regular", "TT-TANK-Regular", $font_path, 400);
+@include font_face("TT-TANK-Light", "TT-TANK-Light", $font_path, 300);

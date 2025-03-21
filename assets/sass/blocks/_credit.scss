@@ -1,0 +1,110 @@
+.credit {
+    padding: 7.9rem 0rem 5.7rem 0rem;
+    background-image: url(/i/credit/credit.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 8rem;
+
+    @include bp($point_2) {
+        background-image: url(/i/credit/credit-adapt.png);
+        padding-bottom: 15.7rem;
+    }
+}
+
+.credit_main {
+    @include bp($point_2) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.credit_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+    max-width: 39.4rem;
+    margin-bottom: 1.4rem;
+
+    @include bp($point_2) {
+        font-size: 28px;
+    }
+}
+
+.credit_subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 110%;
+    margin-bottom: 4rem;
+}
+
+.credit_bottom {
+    @include bp($point_2) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.credit_bottom_subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 110%;
+    color: $grey;
+
+    @include bp($point_2) {
+        color: $white;
+    }
+}
+
+.credit_bottom_phone {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 1.4rem 0;
+
+    input {
+        color: $white;
+        &::-webkit-input-placeholder {
+        color: $grey;
+        }
+    }
+
+    @include bp($point_2) {
+        flex-direction: column;
+    }
+}
+
+.credin_bottom_phone__button {
+    @include bp($point_2) {
+        width: 100%;
+    }
+}
+
+.credit_bottom_phone input[type="text"] {
+    border: .1rem solid $grey;
+    border-radius: 1rem;
+    padding: 1.4rem 2rem;
+    width: 30rem;
+    height: 5.2rem;
+    background: $t500bcg;
+
+    @include bp($point_2) {
+        width: 100%;
+    }
+}
+
+.credit_bottom_form {
+    @include bp($point_2) {
+        width: 100%;
+    }
+}
+
+.credit_bottom_phone input p {
+    color: $white;
+}
+
+.privacy_accept {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 110%;
+}

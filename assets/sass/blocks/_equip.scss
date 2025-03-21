@@ -1,0 +1,190 @@
+.offer {
+    margin-bottom: 8rem;
+}
+
+.equip_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0rem 14rem 0rem;
+}
+
+.equip_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+
+    @include bp($point_2) {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+.equip_filter {
+    margin: 4rem 0;
+    width: 100%;
+}
+
+.equip_filter__list {
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33.3% - 2.4rem), 1fr));
+
+    @include bp($point_2) {
+        grid-template-columns: none;
+    }
+}
+
+.equip_filter__item {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.filter_title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 110%;
+    color: $grey;
+}
+
+.equip_card {
+    display: flex;
+    border: 1px solid $grey;
+    border-radius: 1rem;
+    align-items: center;
+    padding: 2.4rem 2.4rem 3.8rem 2.4rem;
+    position: relative;
+
+    @include bp($point_2) {
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+}
+
+.equip_card_top {
+    display: flex;
+    justify-content: space-between;
+
+    @include bp($point_2) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.equip_card_title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+}
+
+.equip_card_subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 110%;
+    color: $grey;
+    margin-bottom: 3.4rem;
+}
+
+.equip_card_price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    text-transform: uppercase;
+    text-decoration: line-through;
+
+    @include bp($point_2) {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.equip_card_image {
+    width: 30%;
+
+    @include bp($point_2) {
+        width: 100%;
+    }
+}
+
+.equip_card_top_right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 38%;
+
+    @include bp($point_2) {
+        width: 100%;
+    }
+}
+
+.equip_card_info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+
+    @include bp($point_2) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.equip_card_bottom {
+    display: flex;
+    gap: 2.4rem;
+    position: absolute;
+    bottom: 3.5rem;
+
+    @include bp($point_2) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 0;
+        margin-bottom: 4rem;
+    }
+}
+
+.equip_card_bottom_vigoda, .equip_card_bottom_bonus {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.equip_card_bottom_image {
+    width: 2rem;
+    height: 2rem;
+}
+
+.equip_card_bottom_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+
+    @include bp($point_2) {
+
+    }
+}
+
+.equip_loadmore {
+    margin-top: 4rem;
+    border: 1px solid #939697;
+    border-radius: 10px;
+    padding: 1.7rem 3rem;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+}
+
+.filter_select {
+    select {
+        width: 100%;
+        background-color: $t500bcg;
+        padding: 1.6rem 2rem;
+        border-radius: 1rem;
+        color: $white;
+    }
+}

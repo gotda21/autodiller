@@ -1,0 +1,46 @@
+section.tank500
+    .section_in
+        .tank_main 
+            .tank_top 
+                .tank_topright 
+                    img(src="i/tank500/tank500_bronze.png", alt="")
+                .tank_topleft
+                    .tank_topleft_content
+                        .tank_topleft_only Только в&nbsp;АВТОРУСЬ!
+                        .tank_topleft_title TANK 500
+                        .tank_topleft_benefit Выгода по&nbsp;Trade-In до&nbsp;700&nbsp;000&nbsp;₽
+                        .tank_topleft_alarm
+                            .tank_topleft_alarm_image
+                                img(src="i/icons/alarm.svg", alt="")
+                            .tank_topleft_alarm_text
+                                p Ограниченное предложение!
+                            .tank_topleft_alarm_image
+                                img(src="i/icons/alarm.svg", alt="")
+                    .tank_topleft_button
+                        +button({name:"Узнать стоимость по акции", theme: "primary"})
+                        +button({name:"Тест-драйв", theme: "secondary"})
+                        +button({name:"Рассчитать кредит", theme: "secondary"})
+            .tank_middle
+                ul.middle_about__list
+                    li.middle_about__item 
+                        .middle_about_image 
+                            img(src="i/icons/checkor.svg", alt="")
+                        .middle_about_txt Автомобили в&nbsp;наличии с&nbsp;ПТС
+                    li.middle_about__item 
+                        .middle_about_image 
+                            img(src="i/icons/servicesup.svg", alt="")
+                        .middle_about_txt Сервисная поддержка до&nbsp;5&nbsp;лет&nbsp;/ 150&nbsp;000&nbsp;км
+                    li.middle_about__item 
+                        .middle_about_image 
+                            img(src="i/icons/upgradew.svg", alt="")
+                        .middle_about_txt Улучшим любое предложение
+                    li.middle_about__item 
+                        .middle_about_image 
+                            img(src="i/icons/creditmalo.svg", alt="")
+                        .middle_about_txt Кредит&nbsp;0,01%
+            .tank_bottom
+                ul.bottom_gallery__list
+                    -for(i = 1; i < 6; i++)
+                        li.bottom_gallery__item
+                            a(href=`i/tank500/gallery${i}.png` data-fancybox="gallery") 
+                                img(src=`i/tank500/gallery${i}.png`, alt="")

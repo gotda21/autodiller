@@ -1,0 +1,217 @@
+.header_main {
+	display: flex;
+	// justify-content: space-between;
+	top: 0;
+	left: 0;
+	height: $header;
+	width: 100%;
+	will-change: transform;
+	@include z-index(header);
+	align-items: center;
+	gap: 3.2rem;
+	
+	@include bp($point_2) {
+		gap: 1rem;
+	}
+}
+
+.header_left {
+	width: 5.4rem;
+	height: 7rem;
+	@include bp($point_2) {
+		display: flex;
+	}
+}
+
+.header_right {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+	gap: 1rem;
+}
+
+.header_top {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: .1rem solid $grey;
+    padding-bottom: 1rem;
+
+	@include bp($point_2) {
+		display: none;
+	}
+}
+
+.header_topleft {
+	display: flex;
+	align-items: center;
+	gap: .8rem;
+}
+
+.header_topleft_text {
+	font-size: 14px;
+	font-family: $font_1;
+	font-weight: 500;
+	line-height: 110%;
+	color: $grey;
+}
+
+.header_topleft_image {
+	width: 2rem;
+	height: 2rem;
+}
+
+.header_topleft_text {
+	font-family: $font_1;
+}
+
+
+.header_actions__item {
+	display: flex;
+	align-items: center;
+	gap: .7rem;
+}
+
+.header_actions__item_text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 110%;
+}
+
+.header_actions__item_image {
+	width: 1.7rem;
+	height: 1.7rem;
+}
+
+.header_actions__list {
+	display: flex;
+	gap: 4rem;
+}
+
+.header_middle_line {
+	margin: 10px 0px 10px 0px;
+}
+
+.header_bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_bottomleft {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+
+	@include bp($point_2) {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: .4rem;
+	}
+}
+
+.header_bottomright_adapt {
+	@include bp($point_2, $direction:min) {
+		display: none;
+	}
+	display: flex;
+	gap: 1.8rem;
+	.header_call {
+		width: 2rem;
+		height: 2rem;
+	}
+	.header_burger {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+
+.header_bottomleft_textbig {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 110%;
+	border-right: .1rem solid $grey;
+	padding-right: 2rem;
+
+	@include bp($point_2) {
+		border-right: none;
+		padding-right: none;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 110%;
+	}
+}
+
+.header_bottomleft_line {
+	margin: 0px 15px 0px 15px;
+}
+.header_bottomleft_textsmall {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 110%;
+
+	@include bp($point_2) {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 110%;
+		color: $grey;
+	}
+}
+
+.header_bottomright {
+	display: flex;
+	gap: 4rem;
+
+	@include bp($point_2) {
+		display: none;
+	}
+}
+
+.header_bottomright_connect_number {
+    display: flex;
+    flex-direction: column;
+	align-items: end;
+
+}
+
+.header_bottomright_connect_number {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.header_bottomright_connect_online {
+	display: flex;
+	align-items: center;
+	gap: .4rem;
+}
+
+.header_bottomright_connect_online_text {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 110%;
+	color: $grey;
+}
+
+.header_bottomright_connect_online_image {
+	width: 1rem;
+	height: 1rem;
+}
+
+.header_bottomright_call__button {
+	display: flex;
+	background-color: #FF9549;
+	background-size: contain;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	gap: 1.2rem;
+	padding: 1.3rem 3rem;
+}
+
+.header_bottomright_call_text a {
+	color: $black;
+}
+
+.header_bottomright_call_image {
+	width: 2.2rem;
+	height: 2.2rem;
+}

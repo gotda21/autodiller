@@ -1,0 +1,58 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Главная страница'}
+block content_block
+	include blocks/hero
+	include blocks/timer
+	section.about 
+		.section_in
+			.about_main
+				ul.about__list
+					li.about__item
+						.about__item_left
+							img(src="i/icons/dealer.svg", alt="")
+						.about__item_right
+							.about__item_right_title
+								h1 Официальный дилер
+							.about__item_right_subtitle
+								p Гарантируем высокое качество обслуживания
+					li.about__item 
+						.about__item_left
+							img(src="i/icons/fastbuy.svg", alt="")
+						.about__item_right
+							.about__item_right_title
+								h1 ПОКУПКА АВТО ЗА 1 ДЕНЬ
+							.about__item_right_subtitle
+								p Удобный процесс покупки, включая оформление всех документов
+					li.about__item 
+						.about__item_left
+							img(src="i/icons/check.svg", alt="")
+						.about__item_right
+							.about__item_right_title
+								h1 ВСЕ КОМПЛЕКТАЦИИ В НАЛИЧИИ
+							.about__item_right_subtitle
+								p Широкий выбор комплектаций, с полным пакетом документов
+	section.booking 
+		.section_in
+			.booking_main
+				.booking_top
+					h2 ЗАБРОНИРУЙТЕ АВТОМОБИЛЬ СЕГОДНЯ И ПОЛУЧИТЕ ДОПОЛНИТЕЛЬНУЮ ВЫГОДУ 100 000 ₽
+				.booking_bottom
+					.bookin_bottom_cars
+						.booking_bottom_tank300
+							a(href="model300.html") 
+								img(src="i/booking/tank300.png", alt="")
+								p tank 300
+						.booking_bottom_tank500
+							a(href="model500.html") 
+								img(src="i/booking/tank500.png", alt="")
+								p tank 500
+	include blocks/tank300
+	include blocks/tank500
+	include blocks/equip
+	include blocks/tradein
+	include blocks/credit
+	include blocks/offer
+	include blocks/address
+	include blocks/disclaimer

@@ -1,0 +1,169 @@
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@include flex-center;
+	transition: all .3s ease;
+	opacity: 0;
+	visibility: hidden;
+	@include z-index(popup);
+	@include bp($point_2) {
+		padding: 0 2rem;
+	}
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		.popup_main {
+			transform: translateY(0);
+		}
+	}
+}
+.popup_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $dark;
+	opacity: .7;
+}
+
+.popup_main {
+	background-color: $t500bcg;
+	position: relative;
+	padding: 4rem 8rem;
+	border-radius: 1rem;
+}
+
+.popup_close {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	@include flex-center;
+	width: 2.4rem;
+	cursor: pointer;
+}
+
+.popup_top {
+	@include flex-center;
+	flex-direction: column;
+	gap: 1.6rem;
+	margin-bottom: 3.9rem;
+	h3 {
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+
+	p {
+		text-align: center;
+	}
+}
+
+.popup_select {
+	select {
+		@include app;
+		width: 100%;
+		background-color: #252C2C;
+		padding: 1.6rem 2rem;
+		border-radius: 1rem;
+		color: #fff;
+		border: .1rem solid $grey;
+		cursor: pointer;
+	}
+}
+
+
+.popup_input__label {
+	margin-bottom: 0.8rem;
+}
+.popup_input {
+	input {
+		max-height: 5.1rem;
+		@include app;
+		width: 100%;
+		background-color: #252C2C;
+		padding: 1.6rem 2rem;
+		border-radius: 1rem;
+		color: #fff;
+		border: .1rem solid $grey;
+
+		&::-webkit-input-placeholder {
+			color: $white;
+		}
+	}
+}
+
+.popup_form {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem
+}
+
+.popup_select__label {
+	font-size: 1.4rem;
+	margin-bottom: 0.8rem;
+}
+
+.popup_agreement {
+	input {
+		display: none;
+
+		&:checked + label {
+			&:after {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	label {
+		position: relative;
+		padding-left: 3rem;
+		user-select: none;
+		cursor: pointer;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+			padding-left: 2rem;
+		}
+		&:before {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			width: 2rem;
+			height: 2rem;
+			border: .1rem solid $grey;
+			border-radius: .5rem;
+			content: '';
+
+			@include bp($point_2) {
+				width: 1.4rem;
+				height: 1.4rem;
+			}
+		}
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: .4rem;
+			width: 1.2rem;
+			height: 1.2rem;
+			background-color: $grey;
+			border-radius: .3rem;
+			content: '';
+			opacity: 0;
+			visibility: hidden;
+			transition: all .2s ease-in-out;
+
+			@include bp($point_2) {
+				width: .8rem;
+				height: .8rem;
+				left: .3rem;
+			}
+		}
+	}
+}

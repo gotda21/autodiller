@@ -1,0 +1,26 @@
+.disclaimer {
+    margin-bottom: 6rem;
+}
+
+.disclaimer_main summary {
+    font-weight: 500;
+    font-size: 16px;    
+}
+
+.disclaimer_main {
+    border-bottom: .1rem solid $grey;
+    padding-bottom: 6rem;
+}
+
+.disclaimer_main p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: $grey;
+}
+
+.disclaimer_main details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}

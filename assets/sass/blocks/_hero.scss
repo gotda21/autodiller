@@ -1,0 +1,54 @@
+.hero {
+    background-image: url(/i/home/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include bp($point_2) {
+        background-size: contain;
+        max-height: 40rem;
+    }
+}
+
+.hero_main {
+    display: flex;
+    flex-direction: column;
+    padding: 18.2rem 0 27.6rem 0;
+}
+
+.hero_subtitle {
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 110%;
+
+    @include bp($point_2) {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 110%;
+    }
+}
+
+.hero_title {
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin: 1.1rem 0 1.1rem 0;
+
+    @include bp($point_2) {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+}
+
+.hero__button {
+    margin-top: 4rem;
+    max-width: 20%;
+
+    @include bp($point_2) {
+        max-width: 100%;
+    }
+}
+
+//  

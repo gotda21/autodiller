@@ -1,0 +1,55 @@
+.booking_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.booking_top {
+    margin-bottom: 40px;
+}
+
+.booking_top h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+
+    @include bp($point_2) {
+        font-size: 28px;
+    }
+}
+
+.booking_bottom {
+    display: flex;
+}
+
+.bookin_bottom_cars {
+    display: flex;
+}
+
+.booking_bottom_tank300 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking_bottom_tank300 p, .booking_bottom_tank500 p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.booking_bottom_tank500 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking_bottom_tank300, .booking_bottom_tank500 {
+    width: 19.6rem;
+}

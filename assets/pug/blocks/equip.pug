@@ -1,0 +1,52 @@
+section.equip
+    .section_in 
+        .equip_main 
+            .equip_title ПОДБЕРИТЕ КОМПЛЕКТАЦИЮ
+            .equip_filter 
+                ul.equip_filter__list 
+                    li.equip_filter__item
+                        .filter_title Модель
+                        .filter_select
+                            select(name="")
+                                option(value="TANK 300") TANK 300
+                    li.equip_filter__item
+                        .filter_title Комплектация
+                        .filter_select
+                            select(name="")
+                                option(value="Полный, Автоматическая") Полный, Автоматическая
+                    li.equip_filter__item
+                        .filter_title Двигатель
+                        .filter_select
+                            select(name="")
+                                option(value="2.0 л. Бензин") 2.0 л. Бензин
+            .equip_list 
+                .equip_card
+                    .equip_card_image
+                        img(src="i/tank300/tank300_grey.png", alt="")
+                    .equip_card_info
+                        .equip_card_top
+                            .equip_card_top_left
+                                .equip_card_title 
+                                    h3 TANK 300
+                                .equip_card_subtitle 
+                                    p 2.0&nbsp;л. Бензин, Полный, Автоматическая
+                                .equip_card_price
+                                    h3 3 649 000 ₽
+                            .equip_card_bottom 
+                                .equip_card_bottom_vigoda
+                                    .equip_card_bottom_image
+                                        img(src="i/icons/upgradew.svg", alt="")
+                                    .equip_card_bottom_text
+                                        p Выгода по&nbsp;Trade-in до&nbsp;450&nbsp;000&nbsp;₽
+                                .equip_card_bottom_bonus
+                                    .equip_card_bottom_image
+                                        img(src="i/icons/gift.svg", alt="")
+                                    .equip_card_bottom_text
+                                        p Керамическое покрытие в&nbsp;подарок!
+                            .equip_card_top_right
+                                +button({name:"Получить предложение", theme: "primary"})
+                                +button({name:"Тест-драйв", theme: "secondary"})
+            .equip_loadmore 
+                button
+                    a(href="#") 
+                        p Загрузить еще

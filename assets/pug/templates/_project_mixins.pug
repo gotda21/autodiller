@@ -1,0 +1,28 @@
+mixin input(data)
+	input(type=data.type ? type=data.type : type="text"  value=data.val ? value=data.val : value="" name=data.name id=data.id placeholder=data.place class=data.class class="global_input")
+	if data.txt
+		label(for=data.id)!=data.txt
+
+
+mixin article(article)
+	.card 
+		.card_img
+			a(href="#") 
+				img(src=article.img)
+		.card_content
+			.article_title 
+				a(href="#")
+					h3=article.title 
+			p=article.txt 
+			.article__link
+				a(href="#")  Uzzināt vairāk » 
+
+mixin button(data)
+	.btn(class=data.theme)
+		button(type="button")
+			p=data.name
+			.btn_icon
+				if data.theme === 'primary'
+					img(src="i/svg/arrow.svg", alt="")
+				else
+					img(src="i/svg/arrowsec.svg", alt="")

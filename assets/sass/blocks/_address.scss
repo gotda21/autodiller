@@ -1,0 +1,95 @@
+.address {
+    margin-bottom: 10rem;
+}
+
+.address_map {
+    position: relative;
+    height: 50rem;
+    border-radius: 1rem;
+}
+
+.address_map iframe {
+    border-radius: 1rem;
+}
+
+.address_info {
+    width: 100%;
+    position: absolute;
+    background-color: $darkgreen;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem 2.4rem 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    bottom: 2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: calc(100% - 5.6rem);
+
+    @include bp($point_2) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.address_address {
+    max-width: 32.5rem;
+}
+
+.address_address_title {
+    font-weight: 300;
+    font-size: 14px;
+    color: $grey;
+}
+
+.address_address_subtitle {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.address_phone {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.address_phone_title {
+    font-weight: 300;
+    font-size: 14px;
+    color: $grey;
+}
+
+.address_phone_online {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 110%;
+    color: $grey;
+}
+
+.address_phone_number {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.address_phone_image {
+    width: 1rem;
+    height: 1rem;
+}
+
+.address_worktime {
+    max-width: 20rem;
+}
+
+.address_worktime_title {
+    font-weight: 300;
+    font-size: 14px;
+    color: $grey;
+}
+
+.address_worktime_subtitle {
+    font-weight: 500;
+    font-size: 20px;
+}

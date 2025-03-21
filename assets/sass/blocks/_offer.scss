@@ -1,0 +1,91 @@
+.offer_main {
+    background-color: $t300bcg;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 4rem;
+    padding-right: 7rem;
+
+    @include bp($point_2) {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+
+.offer_left {
+    display: flex;
+    width: 50%;
+    gap: 4rem;
+    flex-direction: column;
+
+    @include bp($point_2) {
+        width: 100%;
+    }
+}
+
+.offer_left_title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    @include bp($point_2) {
+        font-size: 28px;
+    }
+}
+
+.offer_left__button {
+    width: 35%;
+
+    @include bp($point_2) {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+}
+
+.offer_right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.offer_right_image {
+    width: 14rem;
+    height: 14rem;
+
+    @include bp($point_2) {
+        width: 9rem;
+        height: 9rem;
+    }
+}
+
+.offer_right_employee {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.offer_right_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    @include bp($point_2) {
+        font-size: 18px;
+    }
+}
+
+.offer_right_subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: $grey;
+    max-width: 25rem;
+
+    @include bp($point_2) {
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
