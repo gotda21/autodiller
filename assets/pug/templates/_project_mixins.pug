@@ -17,12 +17,12 @@ mixin article(article)
 			.article__link
 				a(href="#")  Uzzināt vairāk » 
 
-mixin button(data)
-	.btn(class=data.theme)
+mixin button(btn)
+	.btn(class=btn.theme, data-popup=btn.popup || undefined)
 		button(type="button")
-			p=data.name
+			p=btn.name
 			.btn_icon
-				if data.theme === 'primary'
+				if btn.theme === 'primary'
 					img(src="i/svg/arrow1.svg", alt="")
 				else
 					img(src="i/svg/arrow1.svg", alt="")
