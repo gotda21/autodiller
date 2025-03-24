@@ -158,6 +158,7 @@ Array.from(btnSubmit).map((item) => {
 
 
 
+
 function popup(style, btn, popups) {
 
 	let trigger = document.querySelectorAll(btn);

@@ -1,3 +1,14 @@
+.header {
+	position: fixed;
+    z-index: 50;
+    background-color: inherit;
+    display: flex;
+    justify-content: flex-start;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
 .header_main {
 	display: flex;
 	// justify-content: space-between;

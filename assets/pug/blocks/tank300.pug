@@ -19,7 +19,14 @@ section.tank300
                         +button({name:"Тест-драйв", theme: "secondary"})
                         +button({name:"Рассчитать кредит", theme: "secondary"})
                 .tank_topright 
-                    img(src="i/tank300/tank300_red.png", alt="")
+                    .tank_topright_image
+                        img(src="i/tank300/tank300_red.png", alt="")
+                    .tank_topright__change_color 
+                        ul.change_color__list
+                            -for(i = 1; i < 6; i++)
+                                li.change_color__item
+                                    button
+                                        img(src=`i/tank300/color${i}.svg`, alt="")
             .tank_middle
                 ul.middle_about__list
                     li.middle_about__item 

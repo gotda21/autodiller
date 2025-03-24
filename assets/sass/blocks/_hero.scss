@@ -2,6 +2,7 @@
     background-image: url(/i/home/hero.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 12rem;
 
     @include bp($point_2) {
         background-size: contain;
