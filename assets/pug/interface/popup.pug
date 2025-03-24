@@ -65,12 +65,46 @@
                 label(for="agreementp") Согласен на обработку персональных данных.
 
 .popup.popup_burger
-    .popup_bg
-    .popup_main
+    .popup_bg_burger
+    .popup_burger
         .burger_head 
             h3 АВТОРУСЬ TANK Лосиный Остров
             p Официальный дилер
-        .burger__content 
-            .burger_phone 
-                a(href="#") +7 (999) 999-99-99 
-                span Мы на связи
+        .burger__content
+            .burger_online
+                .burger_online_number
+                    h4 +7 (999) 999-99-99
+                    .burger_online_online
+                        .burger_online_image
+                            img(src="i/icons/online.svg", alt="")
+                        .burger_online_text
+                            p Мы на связи
+            .burger_address
+                .burger_address_address
+                    .burger_address_address_image
+                        img(src="i/icons/icon_pos.svg", alt="")
+                    .burger_address_address_text
+                        p Ярославское шоссе, владение 2&nbsp;В, строение&nbsp;3 (МКАД, 95&nbsp;км)
+                .burger_address_worktime 
+                    .burger_address_worktime_image 
+                        img(src="i/icons/worktime.svg", alt="")
+                    .burger_address_worktime_text
+                        p Ежедневно с&nbsp;09:00 до&nbsp;21:00
+        .burger_bottom
+            .header_bottomright_call__button.trigger-call(data-popup="Заказать звонок")
+                .header_bottomright_call_image
+                    img(src="i/icons/phonecall.svg", alt="")
+                .header_bottomright_call_text
+                    p Заказать звонок
+            .burger_active
+                ul.burger_active__list
+                    li.burger_active__item 
+                        .burger_active__item_image
+                            img(src="i/icons/icon_settings.svg", alt="")
+                        .burger_active__item_text 
+                            p Записаться на сервис
+                    li.burger_active__item 
+                        .burger_active__item_image
+                            img(src="i/icons/icon_testdrive.svg", alt="")
+                        .burger_active__item_text 
+                            p Тест-драйв

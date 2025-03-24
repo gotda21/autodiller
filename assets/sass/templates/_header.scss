@@ -30,6 +30,7 @@
 
 	@include bp($point_2) {
 		gap: 1rem;
+		max-height: 8rem;
 	}
 }
 
@@ -38,6 +39,8 @@
 	height: 7rem;
 	@include bp($point_2) {
 		display: flex;
+		width: 4rem;
+		height: 5rem;
 	}
 }
 
@@ -68,7 +71,6 @@
 
 .header_topleft_text {
 	font-size: 14px;
-	font-family: $font_1;
 	font-weight: 500;
 	line-height: 110%;
 	color: $grey;
@@ -77,10 +79,6 @@
 .header_topleft_image {
 	width: 2rem;
 	height: 2rem;
-}
-
-.header_topleft_text {
-	font-family: $font_1;
 }
 
 .header_actions__item {
@@ -112,6 +110,10 @@
 .header_bottom {
 	display: flex;
 	justify-content: space-between;
+
+	@include bp($point_2) {
+		align-items: center;
+	}
 }
 
 .header_bottomleft {
@@ -132,6 +134,7 @@
 	}
 	display: flex;
 	gap: 1.8rem;
+	align-items: center;
 	.header_call {
 		width: 2rem;
 		height: 2rem;
@@ -148,6 +151,19 @@
 	@include bp($point_2) {
 		border-right: none;
 		padding-right: none;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 110%;
+		display: flex;
+		gap: .4rem;
+	}
+}
+
+.header_bottomleft_textbig span {
+	display: none;
+
+	@include bp($point_2) {
+		display: block;
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 110%;

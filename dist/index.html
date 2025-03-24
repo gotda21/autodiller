@@ -36,14 +36,14 @@
             <div class="header_bottom">
               <div class="header_bottomleft">
                 <div class="header_bottomleft_textbig"> 
-                  <h2>АВТОРУСЬ TANK</h2>
+                  <h2>АВТОРУСЬ TANK</h2><span>Лосиный Остров</span>
                 </div>
                 <div class="header_bottomleft_textsmall">
                   <p>Официальный дилер</p>
                 </div>
               </div>
               <div class="header_bottomright_adapt">
-                <div class="header_call trigger-call"><img src="i/icons/header_call.svg" alt=""></div>
+                <div class="header_call trigger-call" data-popup="Заказать звонок"><img src="i/icons/header_call.svg" alt=""></div>
                 <div class="header_burger"><span> </span><span> </span><span> </span></div>
               </div>
               <div class="header_bottomright">
@@ -97,24 +97,39 @@
           <div class="section_in"> 
             <div class="timer_main"> 
               <div class="timer_srok">Срок действия спецпредложения:</div>
-              <ul class="timer_time__list">
-                <li class="timer_time__item">
-                  <h3>3</h3>
-                  <p>дня</p>
-                </li>
-                <li class="timer_time__item"> 
-                  <h3>06</h3>
-                  <p>часов</p>
-                </li>
-                <li class="timer_time__item">
-                  <h3>14</h3>
-                  <p>минут</p>
-                </li>
-                <li class="timer_time__item">
-                  <h3>55</h3>
-                  <p>секунд</p>
-                </li>
-              </ul>
+              <div class="timer">
+                <div class="timer__circle">
+                  <svg width="80" height="80" viewBox="0 0 100 100">
+                    <circle class="timer__progress" data-unit="days" cx="50" cy="50" r="45"></circle>
+                  </svg>
+                  <div class="timer__item timer__days">00</div>
+                  <div class="timer__label timer__label-days">дней</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="timer__circle">
+                  <svg width="80" height="80" viewBox="0 0 100 100">
+                    <circle class="timer__progress" data-unit="hours" cx="50" cy="50" r="45"></circle>
+                  </svg>
+                  <div class="timer__item timer__hours">00</div>
+                  <div class="timer__label timer__label-hours">часов</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="timer__circle">
+                  <svg width="80" height="80" viewBox="0 0 100 100">
+                    <circle class="timer__progress" data-unit="minutes" cx="50" cy="50" r="45"></circle>
+                  </svg>
+                  <div class="timer__item timer__minutes">00</div>
+                  <div class="timer__label timer__label-minutes">минут</div>
+                </div>
+                <div class="separator">:</div>
+                <div class="timer__circle">
+                  <svg width="80" height="80" viewBox="0 0 100 100">
+                    <circle class="timer__progress" data-unit="seconds" cx="50" cy="50" r="45"></circle>
+                  </svg>
+                  <div class="timer__item timer__seconds">00</div>
+                  <div class="timer__label timer__label-seconds">секунд</div>
+                </div>
+              </div>
               <div class="timer__button">
                 <div class="btn primary trigger-price">
                   <button type="button">
@@ -203,21 +218,21 @@
                     </div>
                   </div>
                   <div class="tank_topleft_button">
-                    <div class="btn primary">
+                    <div class="btn primary trigger-sale" data-popup="Узнать стоимость по акции">
                       <button type="button">
                         <p>Узнать стоимость по акции</p>
                         <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
                         </div>
                       </button>
                     </div>
-                    <div class="btn secondary">
+                    <div class="btn secondary trigger-sale" data-popup="Тест-драйв">
                       <button type="button">
                         <p>Тест-драйв</p>
                         <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
                         </div>
                       </button>
                     </div>
-                    <div class="btn secondary">
+                    <div class="btn secondary trigger-sale" data-popup="Рассчитать кредит">
                       <button type="button">
                         <p>Рассчитать кредит</p>
                         <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
@@ -227,23 +242,33 @@
                   </div>
                 </div>
                 <div class="tank_topright"> 
-                  <div class="tank_topright_image"><img src="i/tank300/tank300_red.png" alt=""></div>
+                  <div class="tank_topright_image"><img class="tank300Img" src="i/tank300/tank300_red.png" alt=""></div>
                   <div class="tank_topright__change_color"> 
                     <ul class="change_color__list">
                       <li class="change_color__item">
-                        <button><img src="i/tank300/color1.svg" alt=""></button>
+                        <button data-src="/i/tank300/tank300_1.png">
+                          <div class="color__input" style="background: #EF2929;"></div>
+                        </button>
                       </li>
                       <li class="change_color__item">
-                        <button><img src="i/tank300/color2.svg" alt=""></button>
+                        <button data-src="/i/tank300/tank300_2.png">
+                          <div class="color__input" style="background: #df4c30;"></div>
+                        </button>
                       </li>
                       <li class="change_color__item">
-                        <button><img src="i/tank300/color3.svg" alt=""></button>
+                        <button data-src="/i/tank300/tank300_3.png">
+                          <div class="color__input" style="background: #c6c9ce;"></div>
+                        </button>
                       </li>
                       <li class="change_color__item">
-                        <button><img src="i/tank300/color4.svg" alt=""></button>
+                        <button data-src="/i/tank300/tank300_4.png">
+                          <div class="color__input" style="background: #212329;"></div>
+                        </button>
                       </li>
                       <li class="change_color__item">
-                        <button><img src="i/tank300/color5.svg" alt=""></button>
+                        <button data-src="/i/tank300/tank300_5.png">
+                          <div class="color__input" style="background: #e6e7e8;"></div>
+                        </button>
                       </li>
                     </ul>
                   </div>
@@ -300,21 +325,21 @@
                     </div>
                   </div>
                   <div class="tank_topleft_button">
-                    <div class="btn primary">
+                    <div class="btn primary trigger-sale" data-popup="Узнать стоимость по акции">
                       <button type="button">
                         <p>Узнать стоимость по акции</p>
                         <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
                         </div>
                       </button>
                     </div>
-                    <div class="btn secondary">
+                    <div class="btn secondary trigger-sale" data-popup="Тест-драйв">
                       <button type="button">
                         <p>Тест-драйв</p>
                         <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
                         </div>
                       </button>
                     </div>
-                    <div class="btn secondary">
+                    <div class="btn secondary trigger-sale" data-popup="Рассчитать кредит">
                       <button type="button">
                         <p>Рассчитать кредит</p>
                         <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
@@ -419,14 +444,14 @@
                         </div>
                       </div>
                       <div class="equip_card_top_right">
-                        <div class="btn primary">
+                        <div class="btn primary trigger-sale" data-popup="Получить предложение">
                           <button type="button">
                             <p>Получить предложение</p>
                             <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
                             </div>
                           </button>
                         </div>
-                        <div class="btn secondary">
+                        <div class="btn secondary trigger-sale" data-popup="Тест-драйв">
                           <button type="button">
                             <p>Тест-драйв</p>
                             <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
@@ -454,7 +479,7 @@
                   <h4>ОБМЕН ПО&nbsp;TRADE-IN НА&nbsp;ВЫГОДНЫХ УСЛОВИЯХ</h4>
                 </div>
                 <div class="tradein_info__button">
-                  <div class="btn primary">
+                  <div class="btn primary trigger-sale" data-popup="Отправить заявку">
                     <button type="button">
                       <p>Отправить заявку</p>
                       <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
@@ -513,7 +538,7 @@
                   <h5>Индивидуальное предложение для корпоративных клиентов</h5>
                 </div>
                 <div class="offer_left__button">
-                  <div class="btn primary">
+                  <div class="btn primary trigger-sale" data-popup="Отправить заявку">
                     <button type="button">
                       <p>Отправить заявку</p>
                       <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
@@ -573,7 +598,7 @@
                     </div>
                   </div>
                   <div class="address_button">
-                    <div class="btn primary">
+                    <div class="btn primary trigger-sale" data-popup="Заказать звонок">
                       <button type="button">
                         <p>Заказать звонок</p>
                         <div class="btn_icon"><img src="i/svg/arrow1.svg" alt=""/>
@@ -592,8 +617,12 @@
               <details>
                 <summary>Дисклеймер</summary>
                 <div class="disclaimer_content">
-                  <p>TANK 300 за&nbsp;3&nbsp;799 000руб с&nbsp;учетом поддержек. Цена на&nbsp;модель TANK (ТЭНК) 300&nbsp;в комплектации Adventure (Эдвенчер) с&nbsp;двигателем 2,0T 4WD, 2023 года производства, цвет автомобиля: белый, с&nbsp;учетом выгоды по&nbsp;трейд-ин 300&nbsp;000&nbsp;рублей. В&nbsp;трейд-ин принимаются автомобили с&nbsp;пробегом со&nbsp;сроком владения и&nbsp;регистрации (постановки на&nbsp;учет) в&nbsp;органах ГИБДД не&nbsp;менее 6&nbsp;месяцев (в&nbsp;отношении автомобилей бренда TANK, Haval, Great Wall&nbsp;&mdash; 3&nbsp;месяца) до&nbsp;сдачи автомобиля в&nbsp;трейд-ин. В&nbsp;качестве документов, подтверждающих срок владения сдаваемого в&nbsp;трейд-ин автомобиля, собственнику необходимо предоставить копию ПТС или СТС или карточку учета&nbsp;ТС из&nbsp;ГИБДД с&nbsp;печатью и&nbsp;подписью. Подробности уточняйте у&nbsp;менеджеров отдела продаж TANK АВТОРУСЬ. Предложение ограничено, не&nbsp;является офертой и&nbsp;действует с&nbsp;01.04.2024г.</p>
-                  <p>TANK 500 за&nbsp;5&nbsp;349&nbsp;000 руб с&nbsp;учетом поддержек. Цена на&nbsp;модель TANK (ТЭНК) 500&nbsp;в комплектации Adventure (Эдвенчер) с&nbsp;двигателем 3,0T 4WD, 2023 года производства, цвет автомобиля: белый, с&nbsp;учетом прямой выгоды в&nbsp;950&nbsp;000&nbsp;рублей. Подробности уточняйте у&nbsp;менеджеров отдела продаж TANK АВТОРУСЬ. Предложение ограничено, не&nbsp;является офертой и&nbsp;действует с&nbsp;01.04.2024г.</p>
+                  <div class="disclaimer_text3">
+                    <p>TANK 300 за&nbsp;3&nbsp;799 000руб с&nbsp;учетом поддержек. Цена на&nbsp;модель TANK (ТЭНК) 300&nbsp;в комплектации Adventure (Эдвенчер) с&nbsp;двигателем 2,0T 4WD, 2023 года производства, цвет автомобиля: белый, с&nbsp;учетом выгоды по&nbsp;трейд-ин 300&nbsp;000&nbsp;рублей. В&nbsp;трейд-ин принимаются автомобили с&nbsp;пробегом со&nbsp;сроком владения и&nbsp;регистрации (постановки на&nbsp;учет) в&nbsp;органах ГИБДД не&nbsp;менее 6&nbsp;месяцев (в&nbsp;отношении автомобилей бренда TANK, Haval, Great Wall&nbsp;&mdash; 3&nbsp;месяца) до&nbsp;сдачи автомобиля в&nbsp;трейд-ин. В&nbsp;качестве документов, подтверждающих срок владения сдаваемого в&nbsp;трейд-ин автомобиля, собственнику необходимо предоставить копию ПТС или СТС или карточку учета&nbsp;ТС из&nbsp;ГИБДД с&nbsp;печатью и&nbsp;подписью. Подробности уточняйте у&nbsp;менеджеров отдела продаж TANK АВТОРУСЬ. Предложение ограничено, не&nbsp;является офертой и&nbsp;действует с&nbsp;01.04.2024г.</p>
+                  </div>
+                  <div class="disclaimer_text5">
+                    <p>TANK 500 за&nbsp;5&nbsp;349&nbsp;000 руб с&nbsp;учетом поддержек. Цена на&nbsp;модель TANK (ТЭНК) 500&nbsp;в комплектации Adventure (Эдвенчер) с&nbsp;двигателем 3,0T 4WD, 2023 года производства, цвет автомобиля: белый, с&nbsp;учетом прямой выгоды в&nbsp;950&nbsp;000&nbsp;рублей. Подробности уточняйте у&nbsp;менеджеров отдела продаж TANK АВТОРУСЬ. Предложение ограничено, не&nbsp;является офертой и&nbsp;действует с&nbsp;01.04.2024г.</p>
+                  </div>
                 </div>
               </details>
             </div>
@@ -641,7 +670,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="footer_topright__button trigger-sale">
+                  <div class="footer_topright__button trigger-sale" data-popup="Заказать звонок">
                     <div class="footer_topright__button_image"><img src="i/icons/phonecall.svg" alt=""></div>
                     <div class="footer_topright__button_text">
                       <p>Заказать звонок</p>
@@ -784,14 +813,62 @@
       </div>
     </div>
     <div class="popup popup_burger">
-      <div class="popup_bg"></div>
-      <div class="popup_main">
+      <div class="popup_bg_burger"></div>
+      <div class="popup_burger">
         <div class="burger_head"> 
           <h3>АВТОРУСЬ TANK Лосиный Остров</h3>
           <p>Официальный дилер</p>
         </div>
-        <div class="burger__content"> 
-          <div class="burger_phone"> <a href="#">+7 (999) 999-99-99 </a><span>Мы на связи</span></div>
+        <div class="burger__content">
+          <div class="burger_online">
+            <div class="burger_online_number">
+              <h4>+7 (999) 999-99-99</h4>
+              <div class="burger_online_online">
+                <div class="burger_online_image"><img src="i/icons/online.svg" alt=""></div>
+                <div class="burger_online_text">
+                  <p>Мы на связи</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="burger_address">
+            <div class="burger_address_address">
+              <div class="burger_address_address_image"><img src="i/icons/icon_pos.svg" alt=""></div>
+              <div class="burger_address_address_text">
+                <p>Ярославское шоссе, владение 2&nbsp;В, строение&nbsp;3 (МКАД, 95&nbsp;км)</p>
+              </div>
+            </div>
+            <div class="burger_address_worktime"> 
+              <div class="burger_address_worktime_image"> <img src="i/icons/worktime.svg" alt=""></div>
+              <div class="burger_address_worktime_text">
+                <p>Ежедневно с&nbsp;09:00 до&nbsp;21:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="burger_bottom">
+          <div class="header_bottomright_call__button trigger-call" data-popup="Заказать звонок">
+            <div class="header_bottomright_call_image"><img src="i/icons/phonecall.svg" alt=""></div>
+            <div class="header_bottomright_call_text">
+              <p>Заказать звонок</p>
+            </div>
+          </div>
+          <div class="burger_active">
+            <ul class="burger_active__list">
+              <li class="burger_active__item"> 
+                <div class="burger_active__item_image"><img src="i/icons/icon_settings.svg" alt=""></div>
+                <div class="burger_active__item_text"> 
+                  <p>Записаться на сервис</p>
+                </div>
+              </li>
+              <li class="burger_active__item"> 
+                <div class="burger_active__item_image"><img src="i/icons/icon_testdrive.svg" alt=""></div>
+                <div class="burger_active__item_text"> 
+                  <p>Тест-драйв</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

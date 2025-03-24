@@ -9,7 +9,7 @@
 
     @include bp($point_2) {
         flex-direction: column;
-        gap: 2.4rem;
+        gap: 3.4rem;
     }
 }
 
@@ -28,29 +28,93 @@
     }
 }
 
-.timer_time__list {
-    list-style: none;
-    display: flex;
-    gap: 9rem;
+// .timer_time__list {
+//     list-style: none;
+//     display: flex;
+//     gap: 9rem;
 
+//     @include bp($point_2) {
+//         gap: 6rem;
+//     }
+// }
+
+// .timer_time__item {
+//     align-items: center;
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .timer_time__item h3 {
+//     font-weight: 700;
+//     font-size: 3.4rem;
+// }
+
+// .timer_time__item p {
+//     font-weight: 300;
+//     font-size: 1.2rem;
+//     line-height: 110%;
+// }
+
+.timer {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    
     @include bp($point_2) {
-        gap: 6rem;
+        gap: .1rem;
     }
 }
 
-.timer_time__item {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.separator {
+    font-size: 39px;
 }
 
-.timer_time__item h3 {
-    font-weight: 700;
-    font-size: 3.4rem;
+.timer__item {
+    position: relative;
+    font-size: 2.4rem;
+
+    @include bp($point_2) {
+        
+    }
 }
 
-.timer_time__item p {
-    font-weight: 300;
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: $white;
+}
+
+    .timer__circle {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-90deg);
+        }
+
+        circle {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 6;
+            stroke-dasharray: 283; // 2 * π * 45 (длина окружности)
+            stroke-dashoffset: 283;
+            transition: stroke-dashoffset 1s linear;
+        }
+    }
+
+.timer__label-minutes, .timer__label-days, .timer__label-hours, .timer__label-seconds {
     font-size: 1.2rem;
-    line-height: 110%;
 }

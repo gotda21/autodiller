@@ -17,9 +17,9 @@ section.tank500
                             .tank_topleft_alarm_image
                                 img(src="i/icons/alarm.svg", alt="")
                     .tank_topleft_button
-                        +button({name:"Узнать стоимость по акции", theme: "primary"})
-                        +button({name:"Тест-драйв", theme: "secondary"})
-                        +button({name:"Рассчитать кредит", theme: "secondary"})
+                        +button({name:"Узнать стоимость по акции", theme: "primary trigger-sale", popup:"Узнать стоимость по акции"})
+                        +button({name:"Тест-драйв", theme: "secondary trigger-sale", popup:"Тест-драйв"})
+                        +button({name:"Рассчитать кредит", theme: "secondary trigger-sale", popup:"Рассчитать кредит"})
             .tank_middle
                 ul.middle_about__list
                     li.middle_about__item 

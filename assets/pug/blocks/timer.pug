@@ -1,19 +1,17 @@
+- var labels = ['дней', 'часов', 'минут', 'секунд'];
 section.timer 
     .section_in 
         .timer_main 
             .timer_srok Срок действия спецпредложения:
-            ul.timer_time__list
-                li.timer_time__item
-                    h3 3
-                    p дня
-                li.timer_time__item 
-                    h3 06
-                    p часов
-                li.timer_time__item
-                    h3 14
-                    p минут
-                li.timer_time__item
-                    h3 55
-                    p секунд
+            .timer
+                each unit, index in ['days', 'hours', 'minutes', 'seconds']
+                    .timer__circle
+                        svg(width="80" height="80" viewBox="0 0 100 100")
+                            circle.timer__progress(data-unit=unit, cx="50", cy="50", r="45")
+                        .timer__item(class="timer__" + unit) 00
+                        .timer__label(class="timer__label-" + unit)= labels[index]
+                        if unit !== 'seconds'
+                    if index != labels.length - 1
+                        .separator :
             .timer__button
                 +button({name:"Узнать цену с выгодами", theme: "primary trigger-price"})

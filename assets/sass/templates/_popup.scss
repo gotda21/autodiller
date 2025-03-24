@@ -186,7 +186,7 @@
 .header_burger {
 	position: relative;
 	width: 2rem;
-	height: 1.8rem;
+	height: 1.5rem;
 	@include flex-center;
 	span {
 		position: absolute;
@@ -202,7 +202,7 @@
 		&:nth-child(2) {
 			top: 50%;
 			transform: translateY(-50%);
-			width: 80%;
+			width: 70%;
 			left: 0;
 		}
 		&:nth-child(3) {
@@ -224,5 +224,135 @@
 				bottom: 42%;
 			}
 		}
+	}
+}
+
+.burger_address_address_image, .burger_address_worktime_image, .burger__button_image, .burger_active__item_image {
+	width: 2rem;
+	height: 2rem;
+}
+
+.burger_online_image {
+	width: 1rem;
+	height: 1rem;
+}
+
+.burger_head {
+	display: flex;
+	flex-direction: column;
+	gap: .4rem;
+}
+
+.burger_head h3 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 110%;
+}
+
+.burger_head p {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 110%;
+	color: $grey;
+}
+
+.burger_online {
+	margin: 4rem 0;
+}
+
+.burger_online_number {
+	display: flex;
+	flex-direction: column;
+	gap: .4rem;
+}
+
+.burger_online_number h4 {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 110%;
+}
+
+.burger_online_online {
+	display: flex;
+	align-items: center;
+	gap: .4rem;
+}
+
+.burger_online_text {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 110%;
+	color: $grey;
+}
+
+.burger_address {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 8rem;
+}
+
+.burger_address_address {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.burger_address_address_text {
+	font-weight: 500;
+	font-size: 16px;
+	color: $grey;
+}
+
+.burger_address_worktime {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.burger_address_worktime_text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 110%;
+	color: $grey;
+}
+
+.burger_bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.burger_active__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.7rem;
+}
+
+.burger_active__item {
+	display: flex;
+	align-items: center;
+	gap: .6rem;
+}
+
+.burger_active__item_text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 110%;
+}
+
+.popup_burger {
+	width: 100%;
+	background-color: $dark;
+	opacity: 1;
+	margin-top: 5rem;
+	
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 }

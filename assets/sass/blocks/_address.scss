@@ -52,15 +52,15 @@
 
 .address_address_title {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: $grey;
 }
 
 .address_address_subtitle {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
     @include bp($point_2) {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 }
 
@@ -72,7 +72,7 @@
 
 .address_phone_title {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: $grey;
 }
 
@@ -81,17 +81,17 @@
     align-items: center;
     gap: .4rem;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 110%;
     color: $grey;
 }
 
 .address_phone_number {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
 
     @include bp($point_2) {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 }
 
@@ -106,16 +106,16 @@
 
 .address_worktime_title {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: $grey;
 }
 
 .address_worktime_subtitle {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
 
     @include bp($point_2) {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 }
 

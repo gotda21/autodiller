@@ -193,4 +193,50 @@
 .change_color__item {
     width: 3rem;
     height: 3rem;
+
+    img {
+        pointer-events: none;
+    }
+}
+
+.color__input {
+    @include flex-center;
+    width: 100%;
+    height: 100%;
+}
+
+.change_color__item button {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    overflow: hidden;
+    border: .1rem solid $grey;
+
+    .color__input {
+        position: relative;
+        pointer-events: none;
+        
+        &:before {
+            display: none;
+            content: '';
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            background-image: url(/i/icons/checkmark.svg);
+            background-size: cover;
+            width: 1.3rem;
+            height: .9rem;
+            background-position: center;
+            
+        }
+    }
+    &.active {
+        .color__input {
+            &:before {
+                display: block;
+            }
+        }
+    }
 }

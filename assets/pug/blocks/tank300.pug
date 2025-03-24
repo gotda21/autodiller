@@ -15,18 +15,20 @@ section.tank300
                             .tank_topleft_alarm_image
                                 img(src="i/icons/alarm.svg", alt="")
                     .tank_topleft_button
-                        +button({name:"Узнать стоимость по акции", theme: "primary"})
-                        +button({name:"Тест-драйв", theme: "secondary"})
-                        +button({name:"Рассчитать кредит", theme: "secondary"})
+                        +button({name:"Узнать стоимость по акции", theme: "primary trigger-sale", popup:"Узнать стоимость по акции"})
+                        +button({name:"Тест-драйв", theme: "secondary trigger-sale", popup:"Тест-драйв"})
+                        +button({name:"Рассчитать кредит", theme: "secondary trigger-sale", popup:"Рассчитать кредит"})
                 .tank_topright 
                     .tank_topright_image
-                        img(src="i/tank300/tank300_red.png", alt="")
+                        img(src="i/tank300/tank300_red.png", alt="" class="tank300Img")
                     .tank_topright__change_color 
                         ul.change_color__list
-                            -for(i = 1; i < 6; i++)
-                                li.change_color__item
-                                    button
-                                        img(src=`i/tank300/color${i}.svg`, alt="")
+                            - let colors = ['#EF2929', '#df4c30', '#c6c9ce', '#212329', '#e6e7e8']
+                                -for(i = 0; i < 5; i++)
+
+                                    li.change_color__item
+                                        button(data-src=`/i/tank300/tank300_${i + 1}.png`)
+                                            .color__input(style=`background: ${colors[i]};`)
             .tank_middle
                 ul.middle_about__list
                     li.middle_about__item 
