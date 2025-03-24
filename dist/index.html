@@ -61,7 +61,9 @@
                 </div>
                 <div class="header_bottomright_call__button trigger-call">
                   <div class="header_bottomright_call_image"><img src="i/icons/phonecall.svg" alt=""></div>
-                  <div class="header_bottomright_call_text"><a href="">Заказать звонок</a></div>
+                  <div class="header_bottomright_call_text">
+                    <p>Заказать звонок</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -113,11 +115,11 @@
                   <p>секунд</p>
                 </li>
               </ul>
-              <div class="timer__button"> 
-                <div class="btn primary">
+              <div class="timer__button">
+                <div class="btn primary trigger-price">
                   <button type="button">
                     <p>Узнать цену с выгодами</p>
-                    <div class="btn_icon"><img src="i/svg/arrow.svg" alt=""/>
+                    <div class="btn_icon"><img src="i/svg/arrowsec.svg" alt=""/>
                     </div>
                   </button>
                 </div>
@@ -475,8 +477,8 @@
                   </div>
                 </div>
                 <div class="popup_agreement"> 
-                  <input type="checkbox" id="agreement" value="Согласен на обработку персональных данных.">
-                  <label for="agreement">Согласен на обработку персональных данных.</label>
+                  <input type="checkbox" id="cragreement" value="Согласен на обработку персональных данных.">
+                  <label for="cragreement">Согласен на обработку персональных данных.</label>
                 </div>
               </div>
             </div>
@@ -618,9 +620,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="footer_topright__button">
+                  <div class="footer_topright__button trigger-sale">
                     <div class="footer_topright__button_image"><img src="i/icons/phonecall.svg" alt=""></div>
-                    <div class="footer_topright__button_text"><a href="%">Заказать звонок</a></div>
+                    <div class="footer_topright__button_text">
+                      <p>Заказать звонок</p>
+                    </div>
                   </div>
                 </div>
                 <div class="footer_topright_actions">
@@ -696,6 +700,40 @@
         <div class="popup_close remove"> <img src="i/icons/x-close.svg"></div>
         <div class="popup_top"> 
           <h3>Заказать звонок</h3>
+          <p>Пожалуйста, укажите свои данные. <br/>Наш менеджер свяжется с вами в течение 15 минут.</p>
+        </div>
+        <div class="popup_form"> 
+          <div class="popup_select">
+            <div class="popup_select__label">Модель</div>
+            <select name="">
+              <option value="TANK 300">TANK 300</option>
+              <option value="TANK 500">TANK 500</option>
+            </select>
+          </div>
+          <div class="popup_input"> 
+            <div class="popup_input__label">Телефон</div>
+            <input type="tel" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="btn primary">
+            <button type="button">
+              <p>Получить предложение</p>
+              <div class="btn_icon"><img src="i/svg/arrow.svg" alt=""/>
+              </div>
+            </button>
+          </div>
+          <div class="popup_agreement"> 
+            <input type="checkbox" id="agreement" value="Согласен на обработку персональных данных.">
+            <label for="agreement">Согласен на обработку персональных данных.</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup_price">
+      <div class="popup_bg remove"></div>
+      <div class="popup_main"> 
+        <div class="popup_close remove"> <img src="i/icons/x-close.svg"></div>
+        <div class="popup_top"> 
+          <h3>Узнать цену с выгодами</h3>
           <p>Пожалуйста, укажите свои данные. <br/>Наш менеджер свяжется с вами в течение 15 минут.</p>
         </div>
         <div class="popup_form"> 

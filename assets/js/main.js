@@ -26,11 +26,11 @@ $(window).on('load', function () {
 	if(windowWidth > mediaPoint1) {
 		popup('14px', '.trigger-sale', '.popup_sale');
 		popup('14px', '.trigger-call', '.popup_call');
-		// popup('14px', '.call_form', '.popup_call');
+		popup('14px', '.trigger-price', '.popup_price');
 	} else {
 		popup('0', '.trigger-sale', '.popup_sale');
 		popup('0', '.trigger-call', '.popup_call');
-		// popup('0', '.call_form', '.popup_call');
+		popup('0', '.trigger-price', '.popup_price');
 	}
 });
 

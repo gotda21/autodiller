@@ -24,6 +24,7 @@
 	@include bp($point_2) {
 		display: flex;
 		flex-direction: column;
+		gap: 4rem;
 	}
 }
 
@@ -81,15 +82,31 @@
 	line-height: 140%;
 }
 
+.footer_topleft_address_text {
+	@include bp($point_2) {
+		color: $grey;
+	}
+}
+
 .footer_topright {
 	display: flex;
 	flex-direction: column;
 	gap: 3.7rem;
+
+	@include bp($point_2) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .footer_topright_phone {
 	display: flex;
 	gap: 4rem;
+	
+	@include bp($point_2) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .footer_topright_number {
@@ -97,12 +114,21 @@
 	flex-direction: column;
 	gap: .4rem;
 	align-items: end;
+
+	@include bp($point_2) {
+		order: 1;
+		align-items: start;
+	}
 }
 
 .footer_toprigt_number_number {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 110%;
+
+	@include bp($point_2) {
+		font-size: 30px;
+	}
 }
 
 .footer_topright_online {
@@ -132,6 +158,7 @@
 	border-radius: 10px;
 	gap: 1.2rem;
 	padding: 1.3rem 3rem;
+	cursor: pointer;
 }
 
 .footer_topright__button_image {
@@ -139,18 +166,28 @@
 	height: 2.2rem;
 }
 
-.footer_topright__button_text a {
+.footer_topright__button_text p {
 	color: $black;
+	user-select: none;
 }
 
 .footer_topright_actions {
 	display: flex;
 	justify-content: end;
+
+	@include bp($point_2) {
+		justify-content: center;
+	}
 }
 
 .footer_topright_actions__list {
 	display: flex;
 	gap: 4rem;
+	
+	@include bp($point_2) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .footer_topright_actions__item {
@@ -175,16 +212,31 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 2rem;
+
+	@include bp($point_2) {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
 }	
 
 .footer_bottomleft {
 	color: $grey;
+
+	@include bp($point_2) {
+		order: 2;
+		justify-content: flex-start;
+	}
 }
 
 .footer_bottomright {
 	display: flex;
 	gap: 6rem;
 	color: $grey;
+
+	@include bp($point_2) {
+		order: 1;
+	}
 }
 
 .footer_bottomright a {
